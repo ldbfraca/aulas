@@ -30,7 +30,7 @@ header > h1{
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 4vw;  /* viewport width (largura de tela) */
+    font-size: 5vw;  /* viewport width (largura de tela) */
 }
 
 header > p{
@@ -56,7 +56,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     font-family: var(--fonte3);
-    font-size: 2vw;
+    font-size: 3.5vw;
 
 }
 
@@ -69,6 +69,13 @@ section.normal{
 section.imagem{
     background-color: darkblue;
     color: white;
+
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
 
 }
 
