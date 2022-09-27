@@ -4,42 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TABELAS</title>
+    <title>TABELONA</title>
     <style>
-        body{
-
-        }
-
         table{
             width: 400px;
-            border-collapse: collapse;  /*junta as bordas*/
+            border-collapse: collapse;
         }
-        td{
+        
+        tbody{
+
+        }
+        
+        td,th{
             border: 1px solid black;
-            padding: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
         }
 
     </style>
-</head>
-<body>
-    <h1>Tabelas</h1>
 
+</head>
+
+<h1>USO DE TABELAS</h1>
+<body>
     <table>
-        <tr>
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
-        </tr>
+        <thead>
+           <tr>
+                <th>Estados</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>São Paulo</td>
+                <td>41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>15 989 929</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>10 444 526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 693 929</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>total</th>
+
+        </tfoot>
+
+
     </table>
 </body>
 </html>
