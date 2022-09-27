@@ -4,95 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulando tabelas</title>
+    <title>tabela boa</title>
     <style>
-        *{
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
-
-        }
-        h1{
-            color: darkblue;
-            text-align: center;
-            background-color: aqua;
-        }
-
-
-
-        table{
+        table, th, tr, td{
             border: 1px solid black;
+            padding: 3px;
             border-collapse: collapse;
         }
-        td{           
-             border: 1px solid black;
-             padding: 5px;
-            }
-        td.titulos{
-            text-decoration: underline;
-        }
+
 
     </style>
-
 </head>
 <body>
-    <h1>Essa tabela vai ser monstra</h1>
-
     <table>
         <thead>
-            <tr>
-                <th>tabelinha pra treinar</th>
-            </tr>
+            <th rowspan="2">Area</th>
+            <th rowspan="2">Disciplinas</th>
+            <th rowspan="2" colspan="2">Notas</th>
+            <th>N1</th>
+            <th>N2</th>
+            <th rowspan="2">media</th>
         </thead>
+
         <tbody>
+            <th rowspan="5">exatas</th>
             <tr>
-                <td class="titulos">Grupo</td>
-                <td class="titulos">Nomes</td>
-                <td class="titulos" colspan="3">filmes</td>
+                <td>matematica</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>              
+                 <td>fisica</td>
+                 <td>0,0</td>
+                 <td>0,0</td>
+                 <td>0,0</td>
+            </tr>
+            <tr>                
+                <td>quimica</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
             </tr>
             <tr>
-                <td class="titulos" rowspan="3">Mulheres</td>
-                <td>Ana Maria</td>
-                <td>Alien</td>
-                <td>rambo</td>
-                <td>vingadores</td>
+                <td>biologia</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
             </tr>
-            <tr>
 
-                <td>Beatriz</td>
-                <td>Hulk</td>
-                <td>inception</td>
-                <td>Batman</td>
-            </tr>
-            <tr>
-
-                <td>Claudia</td>
-                <td>oblivion</td>
-                <td>matrix</td>
-                <td>big hero</td>
-            </tr>
-            <tr>
-                <td class="titulos" rowspan="3">Homens</td>
-                <td>Bruno</td>
-                <td>intocaveis</td>
-                <td>amnesia</td>
-                <td>Gladiador</td>
-            </tr>
-            <tr>
-
-                <td>daniel</td>
-                <td>walle</td>
-                <td>oldboy</td>
-                <td>dangal</td>
-            </tr>
-            <tr>
-
-                <td>fabio</td>
-                <td>starwars</td>
-                <td>taxi driver</td>
-                <td>toy story</td>
-            </tr>
         </tbody>
-    </table>
 
+
+
+
+
+
+
+
+
+    </table>
 </body>
 </html>
