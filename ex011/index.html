@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou aumente e diminua o navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem">
+    </picture>
+
+
+    <h1>reproduzindo audio</h1>
+    <p>reproduza</p>
+    <audio src="media/Summer Solstice on the June Planet - Bail Bonds.mp3" controls autoplay></audio>
+    <h1>inserindo videos</h1>
+    <p>vou colocar video aqui</p>
+    <video src="videos/video1.mp4"width = "750" controls poster="imagens/pequena.png"></video>
+    <video src="videos/video2.mp4"width = "400" controls></video>
+    <video src="videos/video3.mp4"width = "500" controls></video>
+
+    <h1>inserir do yt</h1>
+    <iframe width="1000" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
