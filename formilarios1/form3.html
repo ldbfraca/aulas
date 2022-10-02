@@ -11,9 +11,7 @@
 
     }
 
-    input{
-        padding: 30px;
-    }
+
 </style>
     
 </head>
@@ -50,13 +48,21 @@
                 <label for="icross">CrossFit</label><br>
         </fieldset>
         <fieldset>
-            
-            <input type="range" name="teste" id="teste">
+            <legend>A Cor</legend>    
+                <label for="icor">Selecione a Cor</label>
+                <input type="color" name="cor" id="icor">
+    
 
         </fieldset>
+        <p>
+            <label for="inivel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
 
-
-
+        </p>
 
 </body>
 </html>

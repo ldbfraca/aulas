@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 4</title>
+    <style>
+        body{
+            background-image: url(imagens/pexels-cottonbro-4761339.jpg);
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: aqua;
+        }
+
+
+    </style>
+
+
+</head>
+    
+<body>
+    <h1>Exemplo</h1>
+    <form action="teste.py" method="get" autocomplete="on">
+        <p>
+            <label for="iest">ESTADO</label>
+            <select name="estado" id="iest">
+                <option value="" selected>---ESCOLHA--- </option>
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Desenvolvedor</option>
+                <option>Programador</option>
+                <option>Mecânico</option>
+                <option>Escritor de biscoitos da sorte</option>
+                <option>motorista</option>
+                <option>garota de Programa</option>
+                <option>Médico</option>
+                <option>Astronauta</option>
+                <option>Bombeiro</option>
+                <option>Nutricionista</option>
+                <option>Vidraceiro</option>
+
+
+
+
+            </datalist>
+        </p>
+
+
+    </form>
+
+
+
+
+    <h1>Exemplo de Formulário</h1>
+    <form action="teste.py" method="get" autocomplete="on"></form>
+        <fieldset>
+            <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="imas" value="M"> <label for="imas">Masculino</label> <br>
+                <input type="radio" name="sexo" id="ifem" value="F">
+                <label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="ebas" id="ibas">
+                <label for="ibas">Basquete</label><br>
+                
+
+                <input type="checkbox" name="efut" id="ifut">
+                <label for="ifut">Futebol</label><br>
+
+                <input type="checkbox" name="evoi" id="ivol">
+                <label for="ivol">Volei</label><br>
+
+                <input type="checkbox" name="enat" id="inat">
+                <label for="inat">Natação</label><br>
+
+                <input type="checkbox" name="eten" id="iten">
+                <label for="iten">Tenis</label><br>
+
+                <input type="checkbox" name="ecross" id="icross">
+                <label for="icross">CrossFit</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>A Cor</legend>    
+                <label for="icor">Selecione a Cor</label>
+                <input type="color" name="cor" id="icor">
+    
+
+        </fieldset>
+        <p>
+            <label for="inivel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+
+
+
+
+</body>
+</html>
