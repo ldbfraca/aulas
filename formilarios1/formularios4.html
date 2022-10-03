@@ -56,6 +56,14 @@
                 <option>Vidraceiro</option>
             </datalist>
         </p>
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
+
+
     </form>
     <h1>Exemplo de Formulário</h1>
     <form action="teste.py" method="get" autocomplete="on"></form>
@@ -92,8 +100,9 @@
                 <input type="color" name="cor" id="icor">
         </fieldset>
         <p>
-            <label for="inivel">Nível de satisfação</label>
-            <input type="range" name="nivel" id="inivel">
+            <label for="inum">Nível de satisfação</label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
         </p>
         <p>
             <input type="submit" value="Enviar">
