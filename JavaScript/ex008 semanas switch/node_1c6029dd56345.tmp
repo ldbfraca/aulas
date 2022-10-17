@@ -21,6 +21,6 @@ for( let carro of carros){
 
 let index = 0;
 while(index < 10){
-    console.log('oi');
+    console.log(index);
     index = index + 1;
 }
