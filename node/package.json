@@ -1,0 +1,19 @@
+{
+  "name": "nodeteste",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ldbfraca/aulas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ldbfraca/aulas/issues"
+  },
+  "homepage": "https://github.com/ldbfraca/aulas#readme"
+}
