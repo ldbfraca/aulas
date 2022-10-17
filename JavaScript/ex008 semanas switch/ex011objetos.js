@@ -1,13 +1,13 @@
 const pessoa1 = {
-    nome: 'lucas',
-    sobrenome: 'frança',
+    nome: 'Lucas',
+    sobrenome: 'França',
     idade: 24,
     hobbie: ['crossfit', 'estudar']
 };
 
 const pessoa2 = {
-    nome: 'manu',
-    sobrenome: 'prado',
+    nome: 'Manu',
+    sobrenome: 'Prado',
     idade: 20,
     hobbie: ['mandar mensagem', 'brigar com lucas']
 };
@@ -20,4 +20,8 @@ const pessoa2 = {
 
 const {nome,sobrenome,hobbie,idade} = pessoa1;
 
-console.log(nome, sobrenome, hobbie);
+pessoa1.cachorro = 'Parça'
+
+
+console.log(pessoa1.cachorro);
+
