@@ -104,3 +104,28 @@ header > nav > a{
     font-size: 40px;
     margin-top: 70px;
 }
+
+#icones{
+    text-align: center;
+}
+
+
+.icone1234{
+    padding-left: 50px;
+    width: 200px;
+
+}
+
+.textoicones{
+    font-weight: 20px;
+
+}
+
+#ticone1{
+    margin-top: 0px;
+    margin-left: 350px;
+}
+
+#ticone2{
+    margin-left: 450px;
+}
