@@ -1,2 +1,6 @@
+import pyautogui as py
+import time
 
-print('lista, lists')
+
+time.sleep(2)
+print(py.position())
