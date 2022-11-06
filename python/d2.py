@@ -4,7 +4,6 @@ a = int(input('diga qual o valor 1: '))
 b = int(input('diga qual o valor 2: '))
 c = int(input('diga qual o valor 3: '))
 
-
 if a == b == c:
     print(f'os valores sao iguais: {a}')
 
@@ -16,4 +15,3 @@ elif b > a & b > c:
 
 elif c > b & c > a:
     print(f'c é maior, com {c}')
-
