@@ -1,19 +1,14 @@
 import PySimpleGUI as sg
 import bibliotecas
-layout = [  [sg.T(" ")],
-            [sg.T(" ")],
-            [sg.T(" Qual foi o valor?")], 
-            [sg.InputText('', key='valor')],
-            [sg.T(" ")],
-            [sg.Button('Calcular'), sg.Cancel()],
+layout = [
+            [sg.T("Faça assim:")],
+            [sg.Button('Calcular'), sg.Cancel('Encerrar')],
             [sg.Text('', key='valor recebido')],
           ]
-
-
 janela = sg.Window('LOTAR DINHEIRINHO sem ter reserva', layout, size=(400, 300))
 while True:
     eventos, valores = janela.read()
-    if eventos == sg.WIN_CLOSED or eventos == 'Cancel':
+    if eventos == sg.WIN_CLOSED or eventos == 'Encerrar':
         break
 
     if eventos == 'Calcular':
