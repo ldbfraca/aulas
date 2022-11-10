@@ -3,9 +3,8 @@ import bibliotecas
 layout = [
         [sg.T("sua reserva chegou em 6k?")],
         [sg.T(" ")],
-        [sg.T("         "), sg.Radio('Permission Granted', "RADIO1", default=False, key="-IN2-")],
-        [sg.T("         "), sg.Radio('Permission Grantedd', "RADIOdf1", default=False, key="-IN3-")],
-        [sg.T("                   "), sg.Checkbox('Amipress', default=False, key='amipress')],
+        [sg.T("                   "), sg.Checkbox('mais que 6k', default=False, key='simreserva')],
+        [sg.T("                   "), sg.Checkbox('menos que 6k', default=False, key='naoreserva')],
         [sg.T(" ")],
         [sg.T(" ")],
         [sg.Button('Calcular'), sg.Cancel()],
