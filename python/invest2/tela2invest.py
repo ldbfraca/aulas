@@ -1,19 +1,15 @@
 import PySimpleGUI as sg
 import bibliotecas
-layout = [[sg.T("o que vc recebeu?"), sg.T("                   "), sg.Checkbox('conta de água', default=False, key='recebeu fora')],
-           [sg.T("                   "), sg.Checkbox('Quer investir??', default=False, key='investimento')],
-           [sg.T("Quanto recebeu?"), sg.InputText('', key='valor')],
+layout = [[sg.T("                   "), sg.Checkbox('Recebeu Salário?', default=False, key='salario')],
+        #   [sg.T("                   "), sg.Checkbox('Recebeu Por Fora?', default=False, key='recebeu fora')],
+        #   [sg.T("                   "), sg.Checkbox('Quer investir??', default=False, key='investimento')],
+        #   [sg.T("Quanto recebeu?"), sg.InputText('', key='valor')],
             [sg.Button('Calcular'), sg.Cancel()],
-           [sg.Text('', key='valor recebido')],
+        #   [sg.Text('', key='valor recebido')],
           ]
-
-
-
 janela = sg.Window('LOTAR DINHEIRINHO sem ter reserva', layout, size=(400, 300))
-
 while True:
     eventos, valores = janela.read()
-
     if eventos == sg.WIN_CLOSED or eventos == 'Cancel':
         break
 
