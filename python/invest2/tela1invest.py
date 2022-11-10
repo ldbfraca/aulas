@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-import distribuicao
+import bibliotecas
 layout = [[sg.T("                   "), sg.Checkbox('Recebeu Salário?', default=False, key='salario')],
           [sg.T("                   "), sg.Checkbox('Recebeu Por Fora?', default=False, key='recebeu fora')],
           [sg.T("                   "), sg.Checkbox('Quer investir??', default=False, key='investimento')],
