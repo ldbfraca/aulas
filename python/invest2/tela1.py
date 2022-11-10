@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import bibliotecas
+import tela2
 layout = [
         [sg.T("Qual a fonte do recebimento?")],
         [sg.T(" ")],
@@ -23,26 +24,21 @@ while True:
         break
 
     if eventos == 'Calcular':
-        reais = int(valores['valor'])
 
-
-        if valores['salario'] == True and valores['recebeu fora'] == True and valores['investimento'] == True \
-                or valores['salario'] == True and valores['recebeu fora'] == True \
-                or valores['salario'] == True and valores['investimento'] == True \
-                or valores['recebeu fora'] == True and valores['investimento'] == True:
+        if valores['salario'] == True:
             janela['valor recebido'].update('APERTOU DOIS OU MAIS')
 
 
-        elif valores['salario'] == True and valores['recebeu fora'] == False and valores['investimento'] == False:#só salario é verdadeiro
-            janela['valor recebido'].update(distribuicao.recebeusalario(reais))
+        elif valores['glaucia'] == True:
+            janela['valor recebido'].update(bibliotecas.investimentos(reais))
 
 
-        elif valores['recebeu fora'] == True and valores['salario'] == False and valores['investimento'] == False: #só recebeu fora verdadeiro
-            janela['valor recebido'].update(distribuicao.recebeuporfora(reais))
+        elif valores['legado'] == True: #só recebeu fora verdadeiro
+            janela['valor recebido'].update(bibliotecas.recebeuporfora(reais))
 
 
-        elif valores['recebeu fora'] == False and valores['salario'] == False and valores['investimento'] == True:
-            janela['valor recebido'].update(distribuicao.investimentos(reais))
+        elif valores['amipress'] == False:
+            janela['valor recebido'].update(bibliotecas.investimentos(reais))
 
         else:
             janela['valor recebido'].update('APERTE AO MENOS UM PARA CALCULAR')
