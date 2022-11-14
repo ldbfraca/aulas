@@ -11,14 +11,13 @@ layout = [
         [sg.T(" ")],
         [sg.T(" ")],
         [sg.Button('Calcular'), sg.Cancel()],
-          ]
-
+        ]
 
 
 janela = sg.Window('LOTAR DINHEIRINHO sem ter reserva', layout, size=(400, 300))
 
 while True:
-    eventos, valores = janela.read()
+    eventos, valores, janela = sg.read_all_windows()
 
     if eventos == sg.WIN_CLOSED or eventos == 'Cancel':
         break
@@ -26,20 +25,8 @@ while True:
     if eventos == 'Calcular':
 
         if valores['salario'] == True:
-            janela['valor recebido'].update('APERTOU DOIS OU MAIS')
+            telaa = tela1()
+            tela1.hide()
 
 
-        elif valores['glaucia'] == True:
-            janela['valor recebido'].update(bibliotecas.investimentos(reais))
 
-
-        elif valores['legado'] == True: #só recebeu fora verdadeiro
-            janela['valor recebido'].update(bibliotecas.recebeuporfora(reais))
-
-
-        elif valores['amipress'] == False:
-            janela['valor recebido'].update(bibliotecas.investimentos(reais))
-
-        else:
-            janela['valor recebido'].update('APERTE AO MENOS UM PARA CALCULAR')
-janela.close()
