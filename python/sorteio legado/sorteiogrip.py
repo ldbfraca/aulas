@@ -1,5 +1,5 @@
 import random
-
+import time
 pessoas = [
  'Raissa (indicou Guilherme)',
  'Bruna (indicou Yanca) (A)',
@@ -19,6 +19,10 @@ pessoas = [
  'Joyce (indicou Juliana)',
  'Joyce (indicou Matheus)',
  'Nat Gomes (indicou Jaqueline)' ]
-
-
-print('O ganhador foi: \n\n\n\n' + pessoas [ random.randrange ( len ( pessoas ))])
+print('\n\n\n\nvamos começar?\n\n\n')
+time.sleep(2)
+print('se prepare!\n\n\n')
+time.sleep(2)
+print('...sorteando...\n\n\n')
+time.sleep(2)
+print(f'\n\n\n\n O ganhador foi: \n\n\n  {pessoas [ random.randrange ( len ( pessoas ))]} \n\n\n\n\n\n')
